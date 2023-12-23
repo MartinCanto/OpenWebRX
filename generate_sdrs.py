@@ -42,7 +42,7 @@ for i, sdr in enumerate(sdr_list, start=1):
 custom_profiles = {
     # Short Name : (Start Frequency, End Freqncy, Decoder), Notes
     "VLF": (3e3, 20e3, "wspr"),  # 3 kHz – 20 kHz
-    "Standard Frequency and Time Signal": (20e3, 30e3, "time"),  # 20 kHz – 30 kHz
+    "Standard Frequency and Time Signal": (20e3, 30e3, "am"),  # 20 kHz – 30 kHz
     "Longwave AM Radio": (30e3, 300e3, "acars"),  # 30 kHz – 300 kHz
     "Medium Frequency": (300e3, 530e3, "wspr"),  # 300 kHz – 530 kHz
     "AM Broadcast": (530e3, 1700e3, "am"),  # 530 kHz – 1700 kHz
