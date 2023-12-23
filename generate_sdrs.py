@@ -22,7 +22,7 @@ sdr_list = [
 json_data = '''
 {
     "version": 8,
-    "sdrs": {},
+    "sdrs": {}
 }
 '''
 
