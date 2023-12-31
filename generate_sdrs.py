@@ -158,5 +158,14 @@ for sdr_id, sdr_data in data["sdrs"].items():
         sorted_custom_profiles, calc_sample_rate, sdr_data["device_samp_rate"], sdr_data["device_min_samp_rate"], sdr_data["device_start_freq"], sdr_data["device_end_freq"]
     )
 
+# Function to convert boolean values to lowercase string
+def convert_bool_to_str(obj):
+    if isinstance(obj, bool):
+        return str(obj).lower()
+    return obj
+
+# Convert boolean values to lowercase strings
+data = json.loads(json.dumps(data, default=convert_bool_to_str))
+
 # Print the updated JSON
 print(json.dumps(data, indent=4))
